@@ -11,9 +11,9 @@ id_pattern = re.compile(r'^.\d+$')
 
 # Bot information
 SESSION = environ.get('SESSION', 'TechVJBot')
-API_ID = int(environ.get('API_ID', ''))
-API_HASH = environ.get('API_HASH', '')
-BOT_TOKEN = environ.get('BOT_TOKEN', "")
+API_ID = int(environ.get('API_ID', '27060347'))
+API_HASH = environ.get('API_HASH', 'cfeaa1637b54e9e321b458790b915ee4')
+BOT_TOKEN = environ.get('BOT_TOKEN', "8279242322:AAFNLlE9ui7iKXkUyhuuB4cttA0Nv4Lnu8M")
 
 
 # This Pictures Is For Start Message Picture, You Can Add Multiple By Giving One Space Between Each.
@@ -26,7 +26,7 @@ auth_users = [int(user) if id_pattern.search(user) else user for user in environ
 AUTH_USERS = (auth_users + ADMINS) if auth_users else []
 
 # This Channel Is For When User Start Your Bot Then Bot Send That User Name And Id In This Log Channel, Same For Group Also.
-LOG_CHANNEL = int(environ.get('LOG_CHANNEL', ''))
+LOG_CHANNEL = int(environ.get('LOG_CHANNEL', '1003022923056'))
 
 # This Is File Channel Where You Upload Your File Then Bot Automatically Save It In Database 
 CHANNELS = [int(ch) if id_pattern.search(ch) else ch for ch in environ.get('CHANNELS', '').split()]  # For Multiple Id Use One Space Between Each.
@@ -48,7 +48,7 @@ REQST_CHANNEL = int(reqst_channel) if reqst_channel and id_pattern.search(reqst_
 INDEX_REQ_CHANNEL = int(environ.get('INDEX_REQ_CHANNEL', LOG_CHANNEL))
 
 # This Is Your Bot Support Group Id , Here Bot Will Not Give File Because This Is Support Group.
-support_chat_id = environ.get('SUPPORT_CHAT_ID', '')
+support_chat_id = environ.get('SUPPORT_CHAT_ID', '1002875597961')
 SUPPORT_CHAT_ID = int(support_chat_id) if support_chat_id and id_pattern.search(support_chat_id) else None
 
 # This Channel Is For /batch command file store.
@@ -88,10 +88,10 @@ PUBLIC_FILE_CHANNEL = environ.get('PUBLIC_FILE_CHANNEL', '') # Public Channel Us
 
 
 # Links
-GRP_LNK = environ.get('GRP_LNK', 'https://t.me/vj_bot_disscussion')
-CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/vj_botz')
-SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'vj_bot_disscussion') # Support Chat Link Without https:// or @
-OWNER_LNK = environ.get('OWNER_LNK', 'https://t.me/kingvj01')
+GRP_LNK = environ.get('GRP_LNK', 'https://t.me/Infinity_Anime_Castle')
+CHNL_LNK = environ.get('CHNL_LNK', 'https://t.me/Animu_sumit')
+SUPPORT_CHAT = environ.get('SUPPORT_CHAT', 'Infinity_Anime_Castle') # Support Chat Link Without https:// or @
+OWNER_LNK = environ.get('OWNER_LNK', 't.me/Animusumit')
 
 # True Or False
 AI_SPELL_CHECK = bool(environ.get('AI_SPELL_CHECK', True))
@@ -196,3 +196,4 @@ else:
 # Don't Remove Credit @VJ_Botz
 # Subscribe YouTube Channel For Amazing Bot @Tech_VJ
 # Ask Doubt on telegram @KingVJ01
+
